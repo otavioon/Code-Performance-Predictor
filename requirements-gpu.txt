@@ -1,0 +1,10 @@
+tensorflow-gpu
+spektral==0.6.2
+matplotlib
+sklearn
+numpy
+dask
+ipython
+notebook
+jupyter
+jupyterlab

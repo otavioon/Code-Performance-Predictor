@@ -8,3 +8,5 @@ ipython
 notebook
 jupyter
 jupyterlab
+tqdm
+pyyaml

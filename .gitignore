@@ -1,6 +1,7 @@
 # files
 venv/
 data/ccpe-dados/
+data/runtime/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

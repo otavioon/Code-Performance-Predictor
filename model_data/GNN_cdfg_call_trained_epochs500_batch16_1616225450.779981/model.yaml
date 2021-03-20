@@ -1,0 +1,100 @@
+"backend: tensorflow\nclass_name: Functional\nconfig:\n  input_layers:\n  - - input_25\n\
+  \    - 0\n    - 0\n  - - input_26\n    - 0\n    - 0\n  - - input_27\n    - 0\n \
+  \   - 0\n  - - input_28\n    - 0\n    - 0\n  layers:\n  - class_name: InputLayer\n\
+  \    config:\n      batch_input_shape: !!python/tuple\n      - null\n      - 150\n\
+  \      - 200\n      dtype: float32\n      name: input_25\n      ragged: false\n\
+  \      sparse: false\n    inbound_nodes: []\n    name: input_25\n  - class_name:\
+  \ InputLayer\n    config:\n      batch_input_shape: !!python/tuple\n      - null\n\
+  \      - 150\n      - 150\n      dtype: float32\n      name: input_26\n      ragged:\
+  \ false\n      sparse: false\n    inbound_nodes: []\n    name: input_26\n  - class_name:\
+  \ InputLayer\n    config:\n      batch_input_shape: !!python/tuple\n      - null\n\
+  \      - 150\n      - 200\n      dtype: float32\n      name: input_27\n      ragged:\
+  \ false\n      sparse: false\n    inbound_nodes: []\n    name: input_27\n  - class_name:\
+  \ InputLayer\n    config:\n      batch_input_shape: !!python/tuple\n      - null\n\
+  \      - 150\n      - 150\n      dtype: float32\n      name: input_28\n      ragged:\
+  \ false\n      sparse: false\n    inbound_nodes: []\n    name: input_28\n  - class_name:\
+  \ GraphConv\n    config:\n      activation: relu\n      bias_constraint: null\n\
+  \      bias_initializer:\n        class_name: Zeros\n        config: {}\n      bias_regularizer:\
+  \ null\n      channels: 45\n      dtype: float32\n      kernel_constraint: null\n\
+  \      kernel_initializer:\n        class_name: GlorotUniform\n        config:\n\
+  \          seed: null\n      kernel_regularizer: null\n      name: graph_conv_12\n\
+  \      trainable: true\n      use_bias: false\n    inbound_nodes:\n    - - - input_25\n\
+  \        - 0\n        - 0\n        - &id001 {}\n      - - input_26\n        - 0\n\
+  \        - 0\n        - *id001\n    - - - input_27\n        - 0\n        - 0\n \
+  \       - &id002 {}\n      - - input_28\n        - 0\n        - 0\n        - *id002\n\
+  \    name: graph_conv_12\n  - class_name: MinCutPool\n    config:\n      bias_constraint:\
+  \ null\n      bias_initializer:\n        class_name: Zeros\n        config: {}\n\
+  \      bias_regularizer: null\n      dtype: float32\n      k: 75\n      kernel_constraint:\
+  \ null\n      kernel_initializer:\n        class_name: GlorotUniform\n        config:\n\
+  \          seed: null\n      kernel_regularizer: null\n      mlp_activation: relu\n\
+  \      mlp_hidden: !!python/object/apply:tensorflow.python.training.tracking.data_structures.ListWrapper\n\
+  \      - []\n      name: min_cut_pool_6\n      return_mask: false\n      trainable:\
+  \ true\n    inbound_nodes:\n    - - - graph_conv_12\n        - 0\n        - 0\n\
+  \        - &id003 {}\n      - - input_26\n        - 0\n        - 0\n        - *id003\n\
+  \    - - - graph_conv_12\n        - 1\n        - 0\n        - &id004 {}\n      -\
+  \ - input_28\n        - 0\n        - 0\n        - *id004\n    name: min_cut_pool_6\n\
+  \  - class_name: GraphConv\n    config:\n      activation: relu\n      bias_constraint:\
+  \ null\n      bias_initializer:\n        class_name: Zeros\n        config: {}\n\
+  \      bias_regularizer: null\n      channels: 55\n      dtype: float32\n      kernel_constraint:\
+  \ null\n      kernel_initializer:\n        class_name: GlorotUniform\n        config:\n\
+  \          seed: null\n      kernel_regularizer: null\n      name: graph_conv_13\n\
+  \      trainable: true\n      use_bias: false\n    inbound_nodes:\n    - - - min_cut_pool_6\n\
+  \        - 0\n        - 0\n        - &id005 {}\n      - - min_cut_pool_6\n     \
+  \   - 0\n        - 1\n        - *id005\n    - - - min_cut_pool_6\n        - 1\n\
+  \        - 0\n        - &id006 {}\n      - - min_cut_pool_6\n        - 1\n     \
+  \   - 1\n        - *id006\n    name: graph_conv_13\n  - class_name: GlobalAttnSumPool\n\
+  \    config:\n      attn_kernel_constraint: null\n      attn_kernel_initializer:\n\
+  \        __passive_serialization__: true\n        class_name: GlorotUniform\n  \
+  \      config:\n          seed: null\n      attn_kernel_regularizer: null\n    \
+  \  dtype: float32\n      name: global_attn_sum_pool_6\n      trainable: true\n \
+  \   inbound_nodes:\n    - - - graph_conv_13\n        - 0\n        - 0\n        -\
+  \ {}\n    - - - graph_conv_13\n        - 1\n        - 0\n        - {}\n    name:\
+  \ global_attn_sum_pool_6\n  - class_name: Dense\n    config:\n      activation:\
+  \ relu\n      activity_regularizer: null\n      bias_constraint: null\n      bias_initializer:\n\
+  \        class_name: Zeros\n        config: {}\n      bias_regularizer: null\n \
+  \     dtype: float32\n      kernel_constraint: null\n      kernel_initializer:\n\
+  \        class_name: GlorotUniform\n        config:\n          seed: null\n    \
+  \  kernel_regularizer: null\n      name: dense_24\n      trainable: true\n     \
+  \ units: 200\n      use_bias: true\n    inbound_nodes:\n    - - - global_attn_sum_pool_6\n\
+  \        - 0\n        - 0\n        - {}\n    name: dense_24\n  - class_name: Dense\n\
+  \    config:\n      activation: relu\n      activity_regularizer: null\n      bias_constraint:\
+  \ null\n      bias_initializer:\n        class_name: Zeros\n        config: {}\n\
+  \      bias_regularizer: null\n      dtype: float32\n      kernel_constraint: null\n\
+  \      kernel_initializer:\n        class_name: GlorotUniform\n        config:\n\
+  \          seed: null\n      kernel_regularizer: null\n      name: dense_25\n  \
+  \    trainable: true\n      units: 200\n      use_bias: true\n    inbound_nodes:\n\
+  \    - - - global_attn_sum_pool_6\n        - 1\n        - 0\n        - {}\n    name:\
+  \ dense_25\n  - class_name: Concatenate\n    config:\n      axis: -1\n      dtype:\
+  \ float32\n      name: concatenate_6\n      trainable: true\n    inbound_nodes:\n\
+  \    - - - dense_24\n        - 0\n        - 0\n        - &id007 {}\n      - - dense_25\n\
+  \        - 0\n        - 0\n        - *id007\n    name: concatenate_6\n  - class_name:\
+  \ Dense\n    config:\n      activation: relu\n      activity_regularizer: null\n\
+  \      bias_constraint: null\n      bias_initializer:\n        class_name: Zeros\n\
+  \        config: {}\n      bias_regularizer: null\n      dtype: float32\n      kernel_constraint:\
+  \ null\n      kernel_initializer:\n        class_name: GlorotUniform\n        config:\n\
+  \          seed: null\n      kernel_regularizer: null\n      name: dense_26\n  \
+  \    trainable: true\n      units: 800\n      use_bias: true\n    inbound_nodes:\n\
+  \    - - - concatenate_6\n        - 0\n        - 0\n        - {}\n    name: dense_26\n\
+  \  - class_name: Dense\n    config:\n      activation: relu\n      activity_regularizer:\
+  \ null\n      bias_constraint: null\n      bias_initializer:\n        class_name:\
+  \ Zeros\n        config: {}\n      bias_regularizer: null\n      dtype: float32\n\
+  \      kernel_constraint: null\n      kernel_initializer:\n        class_name: GlorotUniform\n\
+  \        config:\n          seed: null\n      kernel_regularizer: null\n      name:\
+  \ dense_27\n      trainable: true\n      units: 32\n      use_bias: true\n    inbound_nodes:\n\
+  \    - - - dense_26\n        - 0\n        - 0\n        - {}\n    name: dense_27\n\
+  \  - class_name: Dense\n    config:\n      activation: softmax\n      activity_regularizer:\
+  \ null\n      bias_constraint: null\n      bias_initializer:\n        class_name:\
+  \ Zeros\n        config: {}\n      bias_regularizer: null\n      dtype: float32\n\
+  \      kernel_constraint: null\n      kernel_initializer:\n        class_name: GlorotUniform\n\
+  \        config:\n          seed: null\n      kernel_regularizer: null\n      name:\
+  \ class\n      trainable: true\n      units: 4\n      use_bias: true\n    inbound_nodes:\n\
+  \    - - - dense_27\n        - 0\n        - 0\n        - {}\n    name: class\n \
+  \ - class_name: Dense\n    config:\n      activation: linear\n      activity_regularizer:\
+  \ null\n      bias_constraint: null\n      bias_initializer:\n        class_name:\
+  \ Zeros\n        config: {}\n      bias_regularizer: null\n      dtype: float32\n\
+  \      kernel_constraint: null\n      kernel_initializer:\n        class_name: GlorotUniform\n\
+  \        config:\n          seed: null\n      kernel_regularizer: null\n      name:\
+  \ speddup\n      trainable: true\n      units: 1\n      use_bias: true\n    inbound_nodes:\n\
+  \    - - - dense_27\n        - 0\n        - 0\n        - {}\n    name: speddup\n\
+  \  name: model_6\n  output_layers:\n  - - class\n    - 0\n    - 0\n  - - speddup\n\
+  \    - 0\n    - 0\nkeras_version: 2.4.0\n"

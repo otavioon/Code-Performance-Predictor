@@ -6,7 +6,7 @@ We use a GNN to try to learn to predict the performance difference of an applica
 
 For that, we use the network described in the following scheme:
 
-![alt text](https://github.com/vandersonmr/Code-Performance-Predictor/blob/master/network.png)
+![alt text](https://github.com/vandersonmr/Code-Performance-Predictor/blob/master/figures/network.png)
 
 The implementation of the network is in GNN.py and it uses the Spektral framework (https://github.com/danielegrattarola/spektral)
 

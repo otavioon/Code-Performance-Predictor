@@ -1,0 +1,6 @@
+batch_size: 16
+epochs: 500
+feature_dim: 200
+learning_rate: 0.01
+n_classes: 4
+num_nodes: 150

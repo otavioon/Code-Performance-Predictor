@@ -6,15 +6,14 @@ We use a GNN to try to learn to predict the performance difference of an applica
 
 For that, we use the network described in the following scheme:
 
-![alt text](https://github.com/vandersonmr/Code-Performance-Predictor/blob/master/figures/network.png)
+![alt text](https://github.com/vandersonmr/Code-Performance-Predictor/blob/master/network.png)
 
 The implementation of the network is in GNN.py and it uses the Spektral framework (https://github.com/danielegrattarola/spektral)
 
-To test it:
+To install requirements:
 
 ```shell
-pip3 install tensorflow spektral matplotlib sklearn numpy
-python3 GNN.py
+pip install -r requirements-gpu.txt
 ```
 
 This implementation (and Spektral) requires Tensorflow 2.

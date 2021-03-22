@@ -46,7 +46,7 @@ Once data is downloaded, the representations must be processed and a dataset mus
 
 ## Training Graph Neural Networks (GNN) to predict performance
 
-See notebook `GNN.ipynb`.
+See notebook `train_GNN.ipynb`.
 
 ....
 

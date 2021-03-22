@@ -1,6 +1,8 @@
 # GNN Based Code Performance Predictor 
 
-## Performance predictor based on Graph Neural Networks (GNN)
+This repository requires Python 3.5+ and `unzip` package.
+
+## Downloading required data
 
 We use a GNN to try to learn to predict the performance difference of an application compiled with two set of optimizations using the LLVM compiler. The dataset used is described bellow. 
 
@@ -10,24 +12,43 @@ For that, we use the network described in the following scheme:
 
 The implementation of the network is in GNN.py and it uses the Spektral framework (https://github.com/danielegrattarola/spektral)
 
-To install requirements:
+To install requirements, simple use:
 
 ```shell
 pip install -r requirements-gpu.txt
 ```
 
-## The dataset
+In data used can be cloned from [CCPE-DADOS repository](https://github.com/andrefz/ccpe-dados) and must be placed inside `./data/` directory. You can use the `fetch_and_process_ccpe_data.sh` script, located in `./data/` directory to download and unpack the data properly. The command would be:
 
-In data/ there is a serialized NumPy array named small150.npz. This file includes three NumPy arrays. One for pairs of adjacent matrixes representing Control Flow Graphs (CFGs) for same applications compiled twice with different optimization plains. Another contains features for each node in the CFGs, extract from the number of x86_64 instructions for each CFG node in the code binary. The last contains the relative difference of performance from the two pairs of CFGs. The goal is to learn the relative performance using the CFG structure and the binary instructions counters. They have the following shapes:
+```shell
+./data/fetch_and_process_ccpe_data.sh
+```
 
-* Pairs of CFGs: (2, 25500, 150, 150)
-* CFGs features: (2, 25500, 150, 94)
-* Relative speedup: (25500, 1)
+After, unzip the runtimes file, which contains information about the execution time of each application with each optimization sequences. This can be done using the following command:
 
-There are 25500 pairs of CFGs collected from a set of programs compiled with LLVM with different optimization plains. 
+```shell
+unzip -d ./data/runtime ./data/runtime.zip
+```
 
-The goal is to predict the performance difference of an application compiled with two different compilation plains using information about the amount of x86_64 final total of instruction and the CFG instruction. 
+### Description of CCPE-DATA
 
+[CCPE-DATA](https://github.com/andrefz/ccpe-dados) contains information about the computational graphs of ~300 applications, each one compiled with 100 different optimization sequences. The root of this information is, by default, located at `./data/ccpe-dados/`. The information is expressed in two representations:
+* **CFG Representation**: Located at `./data/ccpe-dados/cfg.llvm/`, each YAML file correspond to an application, optimized with an optimization sequence, with the respective representation extracted with an LLVM pass. Each file contains a graph and a matrix that describes the features of each node in the graph. Each feature is a 67-element vector. 
+
+* **CDFG Representation**: Located at `./data/ccpe-dados/cfg.programl/`, each YAML file correspond to an application, optimized with an optimization sequence, with the respective representation extracted with [programl](https://github.com/ChrisCummins/ProGraML/). Each file contains a graph, the edge's features and a matrix that describes the features of each node in the graph. Each feature is a 200-element vector, in the [inst2vec](https://github.com/spcl/ncc) representation. Each edge in graph may be a control, a data or a call edge, expressed by the edge's features.
+
+
+## Datasets generation
+
+Once data is downloaded, the representations must be processed and a dataset must be created to feed the GNN as input. The notebooks `generate_cfgs.ipynb` and `generate_cdfgs.ipynb` are used to create the datasets with CFG and CDFG representations, respectively.
+
+......
+
+## Training Graph Neural Networks (GNN) to predict performance
+
+See notebook `GNN.ipynb`.
+
+....
 
 ## License
 

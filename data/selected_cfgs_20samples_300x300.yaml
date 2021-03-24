@@ -1,0 +1,80 @@
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/BenchmarkGame.n-body.0.82.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/BenchmarkGame.n-body.0.42.ll.cfg.yaml
+  - 0.9807291905628279
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/PolyBench.linear-algebra-kernels-mvt.0.27.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/PolyBench.linear-algebra-kernels-mvt.0.91.ll.cfg.yaml
+  - 0.5056882550448353
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.ary3.0.72.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.ary3.0.15.ll.cfg.yaml
+  - 0.9420880957262845
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/PolyBench.medley-deriche.0.4.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/PolyBench.medley-deriche.0.68.ll.cfg.yaml
+  - 0.9948565012382213
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/PolyBench.stencils-adi.0.29.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/PolyBench.stencils-adi.0.60.ll.cfg.yaml
+  - 0.8053499870776596
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/rodinia.lavaMD.0.65.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/rodinia.lavaMD.0.54.ll.cfg.yaml
+  - 0.9976061048081792
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/rodinia.lud.0.78.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/rodinia.lud.0.4.ll.cfg.yaml
+  - 0.9996527226462388
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/CoyoteBench.almabench.0.4.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/CoyoteBench.almabench.0.32.ll.cfg.yaml
+  - 0.9995098354237298
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/DOE_ProxyApps_C.RSBench.0.72.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/DOE_ProxyApps_C.RSBench.0.93.ll.cfg.yaml
+  - 0.998687267781411
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.hash.0.53.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.hash.0.67.ll.cfg.yaml
+  - 0.997813987294796
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Fhourstones_31.Fhourstones_31.0.41.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Fhourstones_31.Fhourstones_31.0.31.ll.cfg.yaml
+  - 1.0234213675324701
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Olden.em3d.0.3.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Olden.em3d.0.10.ll.cfg.yaml
+  - 1.103993994768379
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/NPB-serial.is.0.63.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/NPB-serial.is.0.98.ll.cfg.yaml
+  - 1.025609138587806
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Trimaran.netbench-crc.0.3.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Trimaran.netbench-crc.0.88.ll.cfg.yaml
+  - 1.039438013714888
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/ASC_Sequoia.CrystalMk.0.65.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/ASC_Sequoia.CrystalMk.0.69.ll.cfg.yaml
+  - 1.0764654556308912
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Dhrystone.dry.0.29.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Dhrystone.dry.0.95.ll.cfg.yaml
+  - 1.3176329595436023
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Misc.flops.0.39.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Misc.flops.0.35.ll.cfg.yaml
+  - 1.3662940345976773
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.spectral-norm.0.28.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.spectral-norm.0.96.ll.cfg.yaml
+  - 1.568912872108786
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/CoyoteBench.fftbench.0.76.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/CoyoteBench.fftbench.0.93.ll.cfg.yaml
+  - 1.2160560566625005
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/cBench.security_blowfish_e.0.7.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/cBench.security_blowfish_e.0.84.ll.cfg.yaml
+  - 1.2046945613419786

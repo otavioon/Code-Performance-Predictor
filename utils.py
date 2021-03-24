@@ -9,6 +9,10 @@ from spektral.layers import *
 def yaml_load(filename: str) -> dict:
     with open(filename, 'rt') as f:
         return yaml.load(f, Loader=yaml.CLoader)
+    
+def yaml_write(filename: str, obj, mode='wt'):
+    with open(filename, mode) as f:
+        yaml.dump(obj, f)
 
 # Very bad way, but faster
 def get_section(filename: str, section: str):

@@ -1,0 +1,80 @@
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.lists.0.32.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.lists.0.11.ll.cfg.yaml
+  - 0.9406142824339438
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Stanford.Puzzle.0.13.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Stanford.Puzzle.0.78.ll.cfg.yaml
+  - 0.9713518863214465
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/cBench.telecom_adpcm_c.0.20.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/cBench.telecom_adpcm_c.0.24.ll.cfg.yaml
+  - 0.8068474138371333
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/rodinia.nn.0.59.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/rodinia.nn.0.12.ll.cfg.yaml
+  - 0.9897315053941353
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Stanford.Towers.0.5.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Stanford.Towers.0.64.ll.cfg.yaml
+  - 0.7245863447538119
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.methcall.0.94.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.methcall.0.51.ll.cfg.yaml
+  - 0.9986159363394044
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Misc.flops-1.0.61.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Misc.flops-1.0.36.ll.cfg.yaml
+  - 0.9983933288080421
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Misc.flops-7.0.82.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Misc.flops-7.0.50.ll.cfg.yaml
+  - 0.9990699771369054
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Misc.flops-1.0.2.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Misc.flops-1.0.13.ll.cfg.yaml
+  - 0.9972727670782195
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/cBench.security_blowfish_e.0.55.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/cBench.security_blowfish_e.0.43.ll.cfg.yaml
+  - 0.9992034240891561
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Misc.flops-8.0.57.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Misc.flops-8.0.93.ll.cfg.yaml
+  - 1.0123753664603938
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/CAPBenchmarks.GF.0.74.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/CAPBenchmarks.GF.0.5.ll.cfg.yaml
+  - 1.0645026004881695
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.methcall.0.66.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.methcall.0.7.ll.cfg.yaml
+  - 1.0252415478766421
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Dhrystone.dry.0.85.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Dhrystone.dry.0.52.ll.cfg.yaml
+  - 1.1094429410876974
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/CoyoteBench.huffbench.0.69.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/CoyoteBench.huffbench.0.83.ll.cfg.yaml
+  - 1.0906867666760864
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/MiBench.telecomm-CRC32.0.91.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/MiBench.telecomm-CRC32.0.60.ll.cfg.yaml
+  - 1.4971302278227698
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/cBench.telecom_CRC32.0.58.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/cBench.telecom_CRC32.0.5.ll.cfg.yaml
+  - 1.1687775778732308
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/rodinia.nw.0.95.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/rodinia.nw.0.24.ll.cfg.yaml
+  - 1.946750476283658
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Olden.treeadd.0.73.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Olden.treeadd.0.49.ll.cfg.yaml
+  - 11.95212571158416
+- !!python/tuple
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.fib2.0.46.ll.cfg.yaml
+  - ./data/ccpe-dados/cfg.llvm/extracted/Shootout.fib2.0.85.ll.cfg.yaml
+  - 1.1523208669439526

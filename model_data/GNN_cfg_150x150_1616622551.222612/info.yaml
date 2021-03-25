@@ -1,9 +1,0 @@
-batch_size: 16
-data_dir_tag: cfg
-epochs: 400
-input_data: ./data/cfgs_20000samples_150x150.npz
-learning_rate: 0.01
-n_classes: 4
-n_features: 67
-n_nodes: 150
-samples: 20000

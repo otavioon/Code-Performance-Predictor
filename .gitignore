@@ -2,8 +2,8 @@
 venv/
 data/ccpe-dados/
 data/runtime/
-data/inst2vec/
 data/*.npz
+.backup/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

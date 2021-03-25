@@ -1,9 +1,0 @@
-batch_size: 32
-data_dir_tag: cdfg-control-data
-epochs: 400
-input_data: ./data/cdfgs_control-data_20000samples_300x300.npz
-learning_rate: 0.01
-n_classes: 4
-n_features: 200
-n_nodes: 300
-samples: 20000

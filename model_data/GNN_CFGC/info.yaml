@@ -1,7 +1,7 @@
 batch_size: 16
-data_dir_tag: cfg
-epochs: 400
-input_data: ./data/cfgs_20000samples_150x150.npz
+data_dir_tag: generated2.control.call
+epochs: 200
+input_data: ./data/generated2.cfgcs_20000samples_150x150.npz
 learning_rate: 0.01
 n_classes: 4
 n_features: 67

@@ -1,0 +1,11 @@
+batch_size: 16
+data_dir_tag: generated2.control.call.data
+epochs: 200
+input_data: ./data/generated2.cdfgcs_20000samples_150x150.npz
+learning_rate: 0.01
+n_classes: 4
+n_features: 67
+n_nodes: 150
+samples: 20000
+test_size: 0.1
+validation_size: 0.1

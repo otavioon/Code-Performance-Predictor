@@ -1,17 +1,17 @@
 "backend: tensorflow\nclass_name: Functional\nconfig:\n  input_layers:\n  - - input_5\n\
   \    - 0\n    - 0\n  - - input_6\n    - 0\n    - 0\n  - - input_7\n    - 0\n   \
   \ - 0\n  - - input_8\n    - 0\n    - 0\n  layers:\n  - class_name: InputLayer\n\
-  \    config:\n      batch_input_shape: !!python/tuple\n      - null\n      - 300\n\
+  \    config:\n      batch_input_shape: !!python/tuple\n      - null\n      - 150\n\
   \      - 67\n      dtype: float32\n      name: input_5\n      ragged: false\n  \
   \    sparse: false\n    inbound_nodes: []\n    name: input_5\n  - class_name: InputLayer\n\
-  \    config:\n      batch_input_shape: !!python/tuple\n      - null\n      - 300\n\
-  \      - 300\n      dtype: float32\n      name: input_6\n      ragged: false\n \
+  \    config:\n      batch_input_shape: !!python/tuple\n      - null\n      - 150\n\
+  \      - 150\n      dtype: float32\n      name: input_6\n      ragged: false\n \
   \     sparse: false\n    inbound_nodes: []\n    name: input_6\n  - class_name: InputLayer\n\
-  \    config:\n      batch_input_shape: !!python/tuple\n      - null\n      - 300\n\
+  \    config:\n      batch_input_shape: !!python/tuple\n      - null\n      - 150\n\
   \      - 67\n      dtype: float32\n      name: input_7\n      ragged: false\n  \
   \    sparse: false\n    inbound_nodes: []\n    name: input_7\n  - class_name: InputLayer\n\
-  \    config:\n      batch_input_shape: !!python/tuple\n      - null\n      - 300\n\
-  \      - 300\n      dtype: float32\n      name: input_8\n      ragged: false\n \
+  \    config:\n      batch_input_shape: !!python/tuple\n      - null\n      - 150\n\
+  \      - 150\n      dtype: float32\n      name: input_8\n      ragged: false\n \
   \     sparse: false\n    inbound_nodes: []\n    name: input_8\n  - class_name: GraphConv\n\
   \    config:\n      activation: relu\n      bias_constraint: null\n      bias_initializer:\n\
   \        class_name: Zeros\n        config: {}\n      bias_regularizer: null\n \
@@ -24,7 +24,7 @@
   \      - - input_8\n        - 0\n        - 0\n        - *id002\n    name: graph_conv_2\n\
   \  - class_name: MinCutPool\n    config:\n      bias_constraint: null\n      bias_initializer:\n\
   \        class_name: Zeros\n        config: {}\n      bias_regularizer: null\n \
-  \     dtype: float32\n      k: 150\n      kernel_constraint: null\n      kernel_initializer:\n\
+  \     dtype: float32\n      k: 75\n      kernel_constraint: null\n      kernel_initializer:\n\
   \        class_name: GlorotUniform\n        config:\n          seed: null\n    \
   \  kernel_regularizer: null\n      mlp_activation: relu\n      mlp_hidden: !!python/object/apply:tensorflow.python.training.tracking.data_structures.ListWrapper\n\
   \      - []\n      name: min_cut_pool_1\n      return_mask: false\n      trainable:\
